@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img width="100%" height="300px" src="images/banner.jpg" alt="banner" />
+            <h1>Pizza Mizza</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="anasayfa" href="#"></i>Anasayfa</a></li>
+                <li><a class="online" href="#"></i>Online Sipariş</a></li>
+                <li><a class="hakkimizda" href="#"></i>Hakkımızda</a></li>
+                <li><a class="iletisim" href="#"></i>İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="#siparis" class="container">
+            <div class="box">
+                <div class="container-header">
+                    <img src="images/karisik.jpg" alt="" />
+                    <div class="head">
+                        <h2>KARIŞIK</h2>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <p>Pizza Sosu, Mozarella Peyniri, Sucuk, Mantar</p>
+                    <strong>
+                        <p>Orta Boy</p>
+                    </strong>
+                    <p class="cost">99₺</p>
+                    <a onclick="sec('Karışık--99')" href="JavaScript:void(0)">Sepete Ekle</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="container-header">
+                    <img src="images/peynirli.jpg" alt="" />
+                    <div class="head">
+                        <h2>PEYNİRLİ</h2>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <p>Pizza Sosu, Mozarella Peyniri, Mantar</p>
+                    <strong>
+                        <p>Orta Boy</p>
+                    </strong>
+                    <p class="cost">79₺</p>
+                    <a href="JavaScript:void(0)" onclick="sec('Peynirli--79')">Sepete Ekle</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="container-header">
+                    <img src="images/sucuklu.jpg" alt="" />
+                    <div class="head">
+                        <h2>SUCUKLU</h2>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <p>Pizza Sosu, Mozarella Peyniri, Sucuk</p>
+                    <strong>
+                        <p>Orta Boy</p>
+                    </strong>
+                    <p class="cost">89₺</p>
+                    <a href="JavaScript:void(0)" onclick="sec('Sucuklu--89')">Sepete Ekle</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="container-header">
+                    <img src="images/kavurmali.jpg" alt="" />
+                    <div class="head">
+                        <h2>KAVURMALI</h2>
+                    </div>
+                </div>
+                <div class="container-body">
+                    <p>Pizza Sosu, Mozarella Peyniri,Dana Kavurma, Mantar</p>
+                    <strong>
+                        <p>Orta Boy</p>
+                    </strong>
+                    <p class="cost">89₺</p>
+                    <a href="JavaScript:void(0)" onclick="sec('Kavurmalı--89')">Sepete Ekle</a>
+                </div>
+            </div>
+            <!-- Sipariş detay -->
+            <div id="orderD" class="order-detail nvsbl">
+                <h2>Ekstra Malzeme</h2>
+                <div id="order-detail" class="or-de check">
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id=""
+                            value="Pul Biber--0.25" />Pul Biber +0.25₺</label>
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id=""
+                            value="Brokoli--6" />Brokoli +6₺</label>
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id=""
+                            value="Füme Kaburga--6" />Füme Kaburga +6₺</label>
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id="" value="Mısır--6" />Mısır
+                        +6₺</label>
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id="" value="Soğan--6" />Soğan
+                        +6₺</label>
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id="" value="Ton Balığı--8" />Ton
+                        Balığı +8₺</label>
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id="" value="Salam--6" />Salam
+                        +6₺</label>
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id="" value="Sosis--6" />Sosis
+                        +6₺</label>
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id="" value="Mantar--6" />Mantar
+                        +6₺</label>
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id=""
+                            value="Domates--6" />Domates +6₺</label>
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id=""
+                            value="Siyah Zeytin--6" />Siyah Zeytin +6₺</label>
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id=""
+                            value="Extra Mozarella--6" />Extra Mozarella +6₺</label>
+                    <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id=""
+                            value="Yeşil Biber--6" />Yeşil Biber +6₺</label>
+                </div><br><br>
+       
+            </div>
+        </div>
+        <aside>
+            <div class="menu">
+                <div class="menu-left" id="menu-left">Ürün</div>
+                <div class="menu-right" id="menu-right">
+                    <div id="pizza">-</div>
+                </div>
+
+                <div class="menu-left" id="menu-left">Ürün Fiyatı - ₺</div>
+                <div class="menu-right" id="menu-right">
+                    <div id="pizza-cost">0</div>
+                </div>
+                <!-- <div class="menu-left" id="menu-left">İçecek Tutarı</div>
+                <div class="menu-right" id="menu-right">
+                    <div id="drink-cost">10</div>
+                </div> -->
+                <div class="menu-left" id="menu-left">Ekstra Malzeme - ₺</div>
+                <div class="menu-right" id="menu-right">
+                    <div class="ext-detail" id="ext-detail-sum">0</div>
+                </div>
+
+                <div class="ext-detail" id="ext-detail"></div>
+                <div class="pizza-piece">
+                    <div class="piece-left">
+                        <a href="JavaScript:void(0)" onclick="pieceAdd('1')" clsss="piece-btn">-</a>
+                    </div>
+                    <div id="piece-middle" class="piece-middle">0</div>
+                    <div class="piece-right">
+                        <a href="JavaScript:void(0)" onclick="pieceAdd('2')" clsss="piece-btn">+</a>
+                    </div>
+                </div>
+
+                <div class="menu-footer">
+                    <input type="" value="Toplam - ₺" disabled />
+                    <input style="text-align: right" id="sum" type="text" value="0" disabled />
+                </div>
+            </div>
+        </aside>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
