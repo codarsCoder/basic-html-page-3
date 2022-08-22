@@ -27,23 +27,23 @@ body{
     font-size: 3rem;
     color: coral;
 }
-nav{
+nav.menu{
     text-align: center;
     position: relative;
     left: 20%;
 }
 
-nav ul {
+nav.menu ul {
     text-decoration: none;
 }
-nav ul li {
+nav.menu ul li {
     display: inline-block;
     padding: 1rem 0.5rem;
     color:white;
   
 }
 
-nav ul li a{
+nav.menu ul li a{
     text-decoration: none;
     font-size: 1.4em;
     font-weight: 400;
@@ -51,9 +51,35 @@ nav ul li a{
     line-height: 300px;
 }
 
-nav ul li a:hover{
+nav.menu ul li a:hover{
     color: brown;
     transition: all ease 0.5s;
+}
+.active{
+    transform: scale(1.1);
+    color: white !important;
+    text-decoration: underline;
+}
+
+.mobile-menu{
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+.mobile-menu ul li{
+    display: block;
+    padding: 1rem 0.5rem;
+    color:white;
+    border-bottom: 1px solid black;
+    background-color: #194A4D;
+    padding: 5px;
+    line-height: 2rem;
+}
+.mobile-menu ul li a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: coral;
 }
 
 main{
@@ -62,6 +88,12 @@ main{
     display: flex;
     justify-content: center;
     margin: auto;
+}
+
+.main-head{
+    display: block;
+ text-align: center;
+ line-height: 3rem;
 }
 
 .container{
@@ -292,4 +324,36 @@ aside .menu .menu-right {
     color: white;
     position: relative;
     bottom: 5px;
+}
+
+@media screen and (max-width:900px) {
+    nav.menu{
+        display: none;
+    }
+    nav.mobile-menu{
+        display: block;
+    }
+    main{
+        width: 600px;
+        flex-direction: column;
+    }
+   .container{
+    width: 600px;
+   } 
+   .order-detail {
+    width: 600px;
+    height: auto;
+   }
+   .order-detail label{
+    display: block;
+    cursor:pointer;
+   }
+   aside{
+    width: 600px;
+    margin-top: 20px;
+   }
+   aside .menu {
+
+    margin: auto;
+   }
 }
