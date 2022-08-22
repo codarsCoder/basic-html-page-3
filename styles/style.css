@@ -8,6 +8,7 @@ body{
     font-family: 'roboto' , sans-serif;
 }
 .banner{
+    min-width:400px;
     height: 300px;
     background-color: bisque;
     margin-bottom: 1px;
@@ -62,7 +63,7 @@ nav.menu ul li a:hover{
 }
 
 .mobile-menu{
-    width: 600px;
+    width: 400px;
     margin: auto;
     text-align: center;
     display: none;
