@@ -27,19 +27,19 @@
         
             <nav class="menu">
                 <ul>
-                    <li><a class="" href="#"></i>Anasayfa</a></li>
-                    <li><a class="active" href="#"></i>Online Sipariş</a></li>
-                    <li><a class="" href="#"></i>Hakkımızda</a></li>
-                    <li><a class="" href="#"></i>İletişim</a></li>
+                    <li><a class="" href="javaScript:void(0)"></i>Anasayfa</a></li>
+                    <li><a class="active" href="javaScript:void(0)"></i>Online Sipariş</a></li>
+                    <li><a class="" href="javaScript:void(0)"></i>Hakkımızda</a></li>
+                    <li><a class="" href="javaScript:void(0)"></i>İletişim</a></li>
                 </ul>
             </nav>
     </div> 
     <nav class="mobile-menu">
         <ul>
-            <li><a class="" href="#"></i>Anasayfa</a></li>
-            <li><a class="active" href="#"></i>Online Sipariş</a></li>
-            <li><a class="" href="#"></i>Hakkımızda</a></li>
-            <li><a class="" href="#"></i>İletişim</a></li>
+            <li><a class="" href="javaScript:void(0)"></i>Anasayfa</a></li>
+            <li><a class="active" href="javaScript:void(0)"></i>Online Sipariş</a></li>
+            <li><a class="" href="javaScript:void(0)"></i>Hakkımızda</a></li>
+            <li><a class="" href="javaScript:void(0)"></i>İletişim</a></li>
         </ul>
     </nav>
     </header>
@@ -48,9 +48,12 @@
     </div>
     <main>
  
-        
+     <div class="wrapper">
+        <div class="main-head">
+            <h2>Ürünlerimiz</h2>
+        </div>
         <div id="#siparis" class="container">
-          
+            
             <div class="box">
                 <div class="container-header">
                     <img src="images/karisik.jpg" alt="" />
@@ -117,6 +120,7 @@
             </div>
             <!-- Sipariş detay -->
             <div id="orderD" class="order-detail nvsbl">
+                <a id="times" onclick="times('orderD')" href="javaScript:void(0)"><i class="fa fa-times"></i></a>
                 <h2>Ekstra Malzeme</h2>
                 <div id="order-detail" class="or-der check">
                     <label><input type="checkbox" onclick="exstraCost()" name="or-cek" id=""
@@ -149,7 +153,11 @@
        
             </div>
         </div>
+    </div>
         <aside>
+            <div class="main-head detail">
+                <h2>Sipariş Detay</h2>
+            </div>
             <div class="menu">
                 <div class="menu-left" id="menu-left">Ürün</div>
                 <div class="menu-right" id="menu-right">
