@@ -12,9 +12,8 @@ let times =  function(data){
 }
 
 function sec(data) {
-  document.getElementById("orderD").classList.toggle("nvsbl");
-  // document.getElementById("orderD").classList.remove("nvsbl");
-  // document.getElementById("orderD").classList.add("vsbl");
+  document.getElementById("orderD").classList.remove("nvsbl");
+  document.getElementById("orderD").classList.add("vsbl");
   document.querySelectorAll('input[name="or-cek"]').checked = false;
   let pizza = data.split("--", 2);
   document.getElementById("pizza").innerHTML =
@@ -50,15 +49,16 @@ function exstraCost() {
 }
 
 function pieceAdd(a) {
+  let cosT = Number(document.getElementById("pizza-cost").innerHTML)
   let pizzaPiece = Number(document.getElementById("piece-middle").innerHTML);
   if (a == "1") {
-    if (pizzaPiece > 1) {
+    if (pizzaPiece > 1 && cosT > 0) {
       pizzaPiece -= 1;
       document.getElementById("piece-middle").innerHTML = pizzaPiece;
       exstraCost();
     }
   } else {
-    if (pizzaPiece < 5) {
+    if (pizzaPiece < 5 && cosT > 0) {
       pizzaPiece += 1;
       document.getElementById("piece-middle").innerHTML = pizzaPiece;
       exstraCost();

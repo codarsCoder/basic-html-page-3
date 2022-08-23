@@ -98,7 +98,7 @@ main{
  text-align: center;
  line-height: 3rem;
  color: white;
- margin: 10px 0;
+ margin: 3px 0 3px 0;
  padding: 20px;
  background-color: coral;
 }
@@ -118,8 +118,8 @@ main{
 }
 .box{
     display: inline-block;
-    width: 325px;
-    height:350px;
+    width: 355px;
+    height:370px;
     /* border: 1px solid black; */
     margin: 25px 15px 5px 15px;
     padding: 5px;
@@ -167,9 +167,17 @@ height: 90px;
     background-color: #ffbe00;
     padding : 0.5rem 0.5rem;
     border-radius: 3px;
+    display: block;
+    margin-top: 5px;
+    text-align: center;
 }
-.container-body a:hover , .basket-link:hover {
+.container-body a:hover {
     color:#a52a2a;
+    border-radius: 10px;
+    transition: all ease 0.5s;
+} 
+.basket-link:hover {
+    color:#ffbe00;
     border-radius: 10px;
     transition: all ease 0.5s;
 } 
@@ -331,12 +339,20 @@ aside .menu .menu-right {
     text-align: center;
 }
 
+.pizza-piece a:hover{
+color: #ffbe00;
+}
+.pizza-piece a:active{
+   background-color: rgba(0, 0, 0, 0.77);
+}
+
 .piece-right a , .piece-left a{
     font-size: 20px;
     padding: 5px 20px;
     background-color:  #aa8209;
     color: white;
     text-decoration: none;
+    transition: all 0.5s;
 }
 .piece-middle{
     font-size: 20px;
@@ -380,7 +396,14 @@ aside .menu .menu-right {
     margin-top: 20px;
    }
    aside .menu {
+    width: 350px;
+    margin-left: 0;
 
-    margin: auto;
+   }
+   aside .menu .menu-right {
+    width: 160px;
+   }
+   aside .menu .menu-left {
+    width: 160px;
    }
 }
