@@ -356,14 +356,14 @@ aside .menu .menu-right {
         display: block;
     }
     main{
-        width: 400px;
+        width: 350px;
         flex-direction: column;
     }
    .container{
-    width: 400px;
+    width: 350px;
    } 
    .order-detail {
-    width: 400px;
+    width: 350px;
     height: auto;
    }
    .order-detail label{
@@ -377,7 +377,7 @@ aside .menu .menu-right {
     margin-left:0;
    }
    aside{
-    width: 400px;
+    width: 350px;
     margin-top: 20px;
    }
    aside .menu {
